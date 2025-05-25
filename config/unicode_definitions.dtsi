@@ -1,0 +1,30 @@
+/ {
+    behaviors {
+        u_agrave: u_agrave {
+            compatible = "zmk,behavior-unicode";
+            label = "à";
+            unicode = <0x00E0>;
+        };
+        u_egrave: u_egrave {
+            compatible = "zmk,behavior-unicode";
+            label = "è";
+            unicode = <0x00E8>;
+        };
+        u_igrave: u_igrave {
+            compatible = "zmk,behavior-unicode";
+            label = "ì";
+            unicode = <0x00EC>;
+        };
+        u_ograve: u_ograve {
+            compatible = "zmk,behavior-unicode";
+            label = "ò";
+            unicode = <0x00F2>;
+        };
+        u_ugrave: u_ugrave {
+            compatible = "zmk,behavior-unicode";
+            label = "ù";
+            unicode = <0x00F9>;
+        };
+    };
+};
+
