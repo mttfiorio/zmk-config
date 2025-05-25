@@ -1,5 +1,5 @@
 #include "unicode_definitions.dtsi"
-#include "key-overrides.dtsi"
+#include "key_overrides.dtsi"
 
 / {
     keymap {
