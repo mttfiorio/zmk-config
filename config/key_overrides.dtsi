@@ -2,116 +2,20 @@
     key-overrides {
         compatible = "zmk,key-overrides";
 
-        disable_as_tab {
-            bindings = <&as_toggle &none>;
-            layers = <0>;
-            keycodes = <&kp TAB>;
+        no_auto_shift_letters {
+            matches = <
+                &kp A &kp B &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp J &kp K &kp L
+                &kp M &kp N &kp O &kp P &kp Q &kp R &kp S &kp T &kp U &kp V &kp W &kp X
+                &kp Y &kp Z
+            >;
+            binding = &kp;
+            apply-behavior = <&no_auto_shift>;
         };
 
-        // Disable Auto Shift for alpha keys
-        disable_as_a {
-            bindings = <&kp A>;
-            keycode = <&kp A>;
-        };
-        disable_as_b {
-            bindings = <&kp B>;
-            keycode = <&kp B>;
-        };
-        disable_as_c {
-            bindings = <&kp C>;
-            keycode = <&kp C>;
-        };
-        disable_as_d {
-            bindings = <&kp D>;
-            keycode = <&kp D>;
-        };
-        disable_as_e {
-            bindings = <&kp E>;
-            keycode = <&kp E>;
-        };
-        disable_as_f {
-            bindings = <&kp F>;
-            keycode = <&kp F>;
-        };
-        disable_as_g {
-            bindings = <&kp G>;
-            keycode = <&kp G>;
-        };
-        disable_as_h {
-            bindings = <&kp H>;
-            keycode = <&kp H>;
-        };
-        disable_as_i {
-            bindings = <&kp I>;
-            keycode = <&kp I>;
-        };
-        disable_as_j {
-            bindings = <&kp J>;
-            keycode = <&kp J>;
-        };
-        disable_as_k {
-            bindings = <&kp K>;
-            keycode = <&kp K>;
-        };
-        disable_as_l {
-            bindings = <&kp L>;
-            keycode = <&kp L>;
-        };
-        disable_as_m {
-            bindings = <&kp M>;
-            keycode = <&kp M>;
-        };
-        disable_as_n {
-            bindings = <&kp N>;
-            keycode = <&kp N>;
-        };
-        disable_as_o {
-            bindings = <&kp O>;
-            keycode = <&kp O>;
-        };
-        disable_as_p {
-            bindings = <&kp P>;
-            keycode = <&kp P>;
-        };
-        disable_as_q {
-            bindings = <&kp Q>;
-            keycode = <&kp Q>;
-        };
-        disable_as_r {
-            bindings = <&kp R>;
-            keycode = <&kp R>;
-        };
-        disable_as_s {
-            bindings = <&kp S>;
-            keycode = <&kp S>;
-        };
-        disable_as_t {
-            bindings = <&kp T>;
-            keycode = <&kp T>;
-        };
-        disable_as_u {
-            bindings = <&kp U>;
-            keycode = <&kp U>;
-        };
-        disable_as_v {
-            bindings = <&kp V>;
-            keycode = <&kp V>;
-        };
-        disable_as_w {
-            bindings = <&kp W>;
-            keycode = <&kp W>;
-        };
-        disable_as_x {
-            bindings = <&kp X>;
-            keycode = <&kp X>;
-        };
-        disable_as_y {
-            bindings = <&kp Y>;
-            keycode = <&kp Y>;
-        };
-        disable_as_z {
-            bindings = <&kp Z>;
-            keycode = <&kp Z>;
+        no_auto_shift_tab {
+            matches = <&kp TAB>;
+            binding = &kp;
+            apply-behavior = <&no_auto_shift>;
         };
     };
 };
