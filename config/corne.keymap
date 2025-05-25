@@ -21,12 +21,12 @@
                         >;
                 };
 
-                layer1 {
+                layer_num {
                         bindings = <
-   &trans    &kp N1   &kp N2   &kp N3     &kp N4     &kp N5             &kp N6    &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &trans    &none    &none    &kp DEL    &kp ESC    &kp RGUI           &kp LEFT  &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &trans    &trans   &trans   &trans     &trans     &trans             &trans    &trans   &trans &trans    &trans &trans
-                                &kp LGUI  &trans  &kp SPACE             &kp RET  &trans   &kp RALT
+   &trans    &kp N1   &kp N2   &kp N3     &kp N4     &kp N5             &kp N6    &kp N7   &kp N8 &kp N9    &kp N0 &trans
+   &trans    &none    &none    &kp DEL    &kp ESC    &kp RGUI           &kp GRAVE  &kp EQUAL  &kp BSLASH  &kp LBKT  &kp RBKT  &kp UNDERSCORE
+   &trans  &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(Y)            &kp L &none &none &none &none &kp DEL
+                                 &trans  &trans   &trans              &trans  &trans   &trans
                         >;
                 };
 
