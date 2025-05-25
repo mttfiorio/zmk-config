@@ -8,15 +8,12 @@
                 &kp M, &kp N, &kp O, &kp P, &kp Q, &kp R, &kp S, &kp T, &kp U, &kp V, &kp W, &kp X,
                 &kp Y, &kp Z
             >;
-            binding = &kp;
             apply-behavior = <&no_auto_shift>;
         };
 
         no_auto_shift_tab {
             matches = <&kp TAB>;
-            binding = &kp;
             apply-behavior = <&no_auto_shift>;
         };
     };
 };
-
