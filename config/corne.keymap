@@ -7,13 +7,17 @@
 
 / {
         behaviors {
-        as: auto_shift {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping_term_ms = <225>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
+                as: auto_shift {
+                        compatible = "zmk,behavior-hold-tap";
+                        #binding-cells = <2>;
+                        tapping_term_ms = <175>;
+                        quick_tap_ms = <0>;
+                        flavor = "tap-preferred";
+                        bindings = <&kp>, <&kp>;
+                };
+
+                &lt {
+                        tapping-term-ms = <250>;
                 };
         };
 
@@ -26,7 +30,7 @@
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P     AS(MINUS)
    &kp LSHFT &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   AS(SEMI) AS(SQT)
    &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  AS(COMMA) AS(DOT) AS(FSLH) AS(DEL)
-                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp BSPC
+                  &kp LGUI &mo 1 &kp SPACE   &lt 3 RET &mo 2 &kp BSPC
                         >;
                 };
 
@@ -35,7 +39,7 @@
    &trans    AS(N1)   AS(N2)   AS(N3)     AS(N4)     AS(N5)             AS(N6)    AS(N7)   AS(N8) AS(N9)    AS(N0) &trans
    &trans    &none    &none    &kp DEL    &kp ESC    &kp RGUI           AS(GRAVE)  AS(EQUAL)  AS(BSLH)  AS(LBKT)  AS(RBKT)  AS(UNDERSCORE)
    &trans  &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(Y)            &kp L &none &none &none &none &trans
-                                 &trans  &trans   &trans              &trans  &mo 3   &trans
+                                 &trans  &trans   &trans              &trans  &trans   &trans
                         >;
                 };
 
@@ -44,7 +48,7 @@
    &trans &kp F1 &kp F2 &kp F3 &kp F4 &kp F5            &none &kp PG_UP &kp UP &kp PG_DN &kp PSCRN &kp C_VOL_UP
    &trans &kp F6 &kp F7 &kp F8 &kp F9 &kp F10           &none &kp LEFT &kp DOWN &kp RIGHT &none &kp C_VOL_DN
    &trans &kp F11 &kp F12 &none &none &none             &none &kp HOME &none &kp END &none &kp C_MUTE
-                             &trans  &mo 3   &trans    &trans  &trans   &trans
+                             &trans  &trans   &trans    &trans  &trans   &trans
                         >;
                 };
 
