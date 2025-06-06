@@ -5,6 +5,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <zmk-helpers/helper.h>
+#include <zmk-helpers/unicode-chars/danish.dtsi>
 
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 #define DEFAULT 0
@@ -12,6 +13,13 @@
 #define FUNCTION   2
 #define MOUSE   3
 #define ACCENT   4
+
+ZMK_UNICODE_SINGLE(curr_euro,       N2, N0, A, C)  // € (Euro)
+ZMK_UNICODE_PAIR(a_grave,        N0, N0, E, N0,   N0, N0, C, N0)  // à/À
+ZMK_UNICODE_PAIR(e_grave,        N0, N0, E, N8,   N0, N0, C, N8)  // è/È
+ZMK_UNICODE_PAIR(i_grave,        N0, N0, E, C,   N0, N0, C, C)  // ì/Ì
+ZMK_UNICODE_PAIR(o_grave,        N0, N0, F, N2,   N0, N0, D, N2)  // ò/Ò
+ZMK_UNICODE_PAIR(u_grave,        N0, N0, F, N9,   N0, N0, D, N9)  // ù/Ù
 
 / {
         behaviors {
@@ -76,8 +84,8 @@
 
                  ACCENT_layer {
                         bindings = <
-    &trans &none  &none  &none  &none  &none         &none &none &none &none &none &none
-    &trans &none  &none  &none  &none  &none         &none &none &none &none &none &none
+    &trans &none  &none  &e_grave  &curr_euro  &none         &none &u_grave &i_grave &o_grave &none &da_aa
+    &trans &a_grave  &none  &none  &none  &none         &none &none &none &none &da_ae &da_oe
     &trans &none  &none  &none  &none  &none         &none &none &none &none &none &none
                  &trans &none &trans          &trans &none &trans
                         >;
