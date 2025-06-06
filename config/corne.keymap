@@ -13,6 +13,9 @@
 #define MOUSE   3
 #define ACCENT   4
 
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 800  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 5    // default: 10
+
 ZMK_UNICODE_SINGLE(curr_euro,       N2, N0, A, C)  // € (Euro)
 ZMK_UNICODE_PAIR(a_grave,        N0, N0, E, N0,   N0, N0, C, N0)  // à/À
 ZMK_UNICODE_PAIR(e_grave,        N0, N0, E, N8,   N0, N0, C, N8)  // è/È
