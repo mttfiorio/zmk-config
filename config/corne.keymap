@@ -69,9 +69,9 @@ ZMK_UNICODE_PAIR(u_grave,        N0, N0, F, N9,   N0, N0, D, N9)  // ù/Ù
 
                 MOUSE_layer {
                         bindings = <
-    &trans &trans  &trans  &trans  &trans  &trans         &mkp MB2 &msc SCRL_UP &mmv MOVE_UP &msc SCRL_DOWN &trans &trans
-    &trans &trans  &trans  &trans  &trans  &trans         &mkp MB1 &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &trans
-    &trans &trans  &trans  &trans  &trans  &trans         &mkp MB3 &trans  &trans  &trans  &trans  &trans
+    &trans &none  &none  &none  &none  &none         &mkp MB2 &msc SCRL_UP &mmv MOVE_UP &msc SCRL_DOWN &none &none
+    &trans &none  &none  &none  &none  &none         &mkp MB1 &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &none
+    &trans &none  &none  &none  &none  &none         &mkp MB3 &none  &none  &none  &none  &none
                  &trans &none &trans          &trans &none &trans
                         >;
                 };
