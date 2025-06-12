@@ -13,7 +13,7 @@
 #define MOUSE   3
 #define ACCENT   4
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 800  // default: 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 900  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 5    // default: 10
 
 ZMK_UNICODE_SINGLE(curr_euro,       N2, N0, A, C)  // € (Euro)
@@ -48,7 +48,7 @@ ZMK_UNICODE_PAIR(u_grave,        N0, N0, F, N9,   N0, N0, D, N9)  // ù/Ù
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P     AS(MINUS)
    &kp LSHFT &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   AS(SEMI) AS(SQT)
    &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  AS(COMMA) AS(DOT) AS(FSLH) AS(DEL)
-                  &kp LGUI &mo NUMBERS &kp SPACE   &lt MOUSE RET &mo FUNCTION &kp BSPC
+                  &kp LALT &mo NUMBERS &kp SPACE   &lt MOUSE RET &mo FUNCTION &kp BSPC
                         >;
                 };
 
